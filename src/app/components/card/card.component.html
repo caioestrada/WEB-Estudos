@@ -1,0 +1,17 @@
+<div class="card text-dark bg-light mb-3 card-heght">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-2 mt-3 m-1">
+        <input type="checkbox"
+        class="checkbox-md"
+        value="{{filme.id}}"
+        [(ngModel)]="filme.checked"
+        (change)="onCheck()">
+      </div>
+      <div class="col-9">
+        <span class="card-title h6"><strong>{{ filme.titulo }}</strong></span>
+        <p class="card-text">{{ filme.ano }}</p>
+      </div>
+    </div>
+  </div>
+</div>

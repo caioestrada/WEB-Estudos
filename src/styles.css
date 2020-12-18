@@ -1,0 +1,23 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.panel-darkgrey {
+  background-color: rgb(92, 92, 92)
+}
+
+.background-grey {
+  background-color: rgb(168, 168, 168)
+}
+
+.checkbox-md {
+  width: 25px;
+  height:25px;
+}
+
+.button-camp {
+  width: 100%;
+  height: 100%;
+}
+
+.card-heght {
+  height: 85%;
+}

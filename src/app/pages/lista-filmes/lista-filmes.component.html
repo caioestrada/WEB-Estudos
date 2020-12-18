@@ -1,0 +1,26 @@
+<div class="m-5">
+  <app-home-panel [titulo]="titulo" [descricao]="descricao"></app-home-panel>
+  <div class="mb-3">
+    <div class="row justify-content-between">
+      <div class="col-8">
+        <span class="h5 text-light">Selecionados</span>
+        <p class="h5 text-light">
+          <span [ngStyle]="{'color': filmesSelecionados?.length <= 8 ? 'white' : 'orange' }">
+            {{ filmesSelecionados?.length || '0' }}
+          </span>
+          de 8 filmes
+        </p>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-dark text-light button-camp" style="white-space: normal;" (click)="gerarMeuCampeonato()">
+          GERAR MEU CAMPEONATO</button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="row">
+      <app-card *ngFor="let filme of filmes" [filme]="filme" (checkItem)="onCheckItem()"
+        class="col-3 col-md-3 col-sm-6"></app-card>
+    </div>
+  </div>
+</div>
