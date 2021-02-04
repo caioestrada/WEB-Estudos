@@ -5,7 +5,7 @@
       <div class="col-8">
         <span class="h5 text-light">Selecionados</span>
         <p class="h5 text-light">
-          <span [ngStyle]="{'color': filmesSelecionados?.length <= 8 ? 'white' : 'orange' }">
+          <span [ngStyle]="{'color': filmesSelecionados!.length <= 8 ? 'white' : 'orange' }">
             {{ filmesSelecionados?.length || '0' }}
           </span>
           de 8 filmes
